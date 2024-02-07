@@ -200,7 +200,6 @@ public class Index : PageModel
         return new ScopeViewModel
         {
             Value = identity.Name,
-            DisplayName = identity.DisplayName ?? identity.Name,
             Description = identity.Description,
             Emphasize = identity.Emphasize,
             Required = identity.Required,
