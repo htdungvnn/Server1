@@ -2,7 +2,6 @@ using AutoMapper;
 
 namespace API.AppService;
 
-public class MapperProfile:Profile
+public class MapperProfile : Profile
 {
-    
 }

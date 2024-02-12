@@ -24,13 +24,13 @@ public class DapperRepository<TEntity> : IDapperRepository<TEntity> where TEntit
 
     public async Task<TEntity?> GetByIdAsync(Guid id)
     {
-        var result = await _db.QueryAsync($"SELECT * FROM {_table.Name+'s'} WHERE Id = @Id", new { Id = id });
+        var result = await _db.QueryAsync($"SELECT * FROM {_table.Name + 's'} WHERE Id = @Id", new { Id = id });
         return result.FirstOrDefault();
     }
 
     public async Task<IEnumerable<TEntity>> GetAllAsync()
     {
-        var sql = "SELECT * FROM " + _table.Name+'s';
+        var sql = "SELECT * FROM " + _table.Name + 's';
         var result = _db.QueryAsync(sql);
         return _mapper.Map<IEnumerable<TEntity>>(result);
     }
@@ -39,19 +39,19 @@ public class DapperRepository<TEntity> : IDapperRepository<TEntity> where TEntit
     {
         var propGet = _extention.GetPropName(DapperExtention<TEntity>.ActionExcute.Get);
         var propAdd = _extention.GetPropName(DapperExtention<TEntity>.ActionExcute.Add);
-        var sql = $"INSERT INTO {_table.Name+'s'}({propGet}) VALUES ({propAdd})";
+        var sql = $"INSERT INTO {_table.Name + 's'}({propGet}) VALUES ({propAdd})";
         await _db.ExecuteAsync(sql, entity);
     }
 
     public async Task Remove(Guid id)
     {
-        await _db.ExecuteAsync($"DELETE FROM {_table.Name+'s'} WHERE Id=@Id", new { Id = id });
+        await _db.ExecuteAsync($"DELETE FROM {_table.Name + 's'} WHERE Id=@Id", new { Id = id });
     }
 
     public async Task UpdateAsync(TEntity entity)
     {
         var propUpdate = _extention.GetPropName(DapperExtention<TEntity>.ActionExcute.Update);
-        await _db.ExecuteAsync($"UPDATE {_table.Name+'s'} SET +{propUpdate} WHERE Id=@Id", entity);
+        await _db.ExecuteAsync($"UPDATE {_table.Name + 's'} SET +{propUpdate} WHERE Id=@Id", entity);
     }
     // private enum ActionExcute
     // {

@@ -2,7 +2,6 @@ using AutoMapper;
 using Core.Repository;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace BLL.Services;
 

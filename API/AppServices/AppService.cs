@@ -3,7 +3,6 @@ using BLL.UnitOfWork;
 using DAL.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration.Ini;
 
 namespace API.AppService;
 
@@ -15,6 +14,11 @@ public static class AppServices
         services.AddTransient<IDbConnection>(sp => new SqlConnection(configuration.GetConnectionString("MoviesDb")));
         services.AddDbContextPool<MoviesDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("MoviesDb")));
+        services.AddStackExchangeRedisCache(options =>
+        {
+            options.Configuration = configuration.GetConnectionString("RedisConn");
+            options.InstanceName = "MovieCache";
+        });
         services.AddAutoMapper(typeof(Program).Assembly);
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddControllers();
