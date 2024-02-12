@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1IRs0WV3h4aCLKLf9l1mbq8098tI+t7uxN54dOvqFkWUqd6DiYcq8Or4yZkPvPFpMkkaudzRStn4H+XqpJ2f6w==",
+  "dgSpecHash": "tjEJItdCiEQ8pp0CtF0s3Ejdq4tSpDla9/zOjufwB/p/0Ba7uSSrDdLFnpcQ3B9k2k6nUSPtVqSocWl0LCvEMQ==",
   "success": true,
   "projectFilePath": "/Users/hoangtiendung/Documents/Server/DAL/DAL.csproj",
   "expectedPackageFiles": [
+    "/Users/hoangtiendung/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/hoangtiendung/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/hoangtiendung/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/Users/hoangtiendung/.nuget/packages/dapper/2.1.28/dapper.2.1.28.nupkg.sha512",
