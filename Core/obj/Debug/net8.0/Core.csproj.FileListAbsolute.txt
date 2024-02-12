@@ -1,0 +1,13 @@
+/Users/hoangtiendung/Documents/Server/Core/bin/Debug/net8.0/Core.deps.json
+/Users/hoangtiendung/Documents/Server/Core/bin/Debug/net8.0/Core.dll
+/Users/hoangtiendung/Documents/Server/Core/bin/Debug/net8.0/Core.pdb
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.csproj.AssemblyReference.cache
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.sourcelink.json
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.dll
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/refint/Core.dll
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/Core.pdb
+/Users/hoangtiendung/Documents/Server/Core/obj/Debug/net8.0/ref/Core.dll
