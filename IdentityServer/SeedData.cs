@@ -104,6 +104,12 @@ public class SeedData
                 foreach (var scope in Config.ApiScopes) context.ApiScopes.Add(scope.ToEntity());
                 context.SaveChanges();
             }
+            
+            if (!context.ApiResources.Any())
+            {
+                foreach (var resource in Config.GetApiResources()) context.ApiResources.Add(resource.ToEntity());
+                context.SaveChanges();
+            }
         }
     }
 }

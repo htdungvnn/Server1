@@ -10,7 +10,14 @@ public static class Config
             new IdentityResources.OpenId(),
             new IdentityResources.Profile()
         };
-
+    public static IEnumerable<ApiResource> GetApiResources() =>
+        new List<ApiResource> 
+        { 
+            new ApiResource("companyApi", "CompanyEmployee API") 
+            { 
+                Scopes = { "companyApi" } 
+            } 
+        };
     public static IEnumerable<ApiScope> ApiScopes =>
         new[]
         {
